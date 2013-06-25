@@ -1,0 +1,12 @@
+{
+  "name": "Remove That Bell!",
+  "version": "1.0",
+  "description": "Removes bell in gmail",
+  "background": {"page": "background.html"},
+  "manifest_version": 2,
+  
+  "content_scripts": [ {
+    "js": [ "jQuery-1.10.1.min.js", "removeBell.js" ],
+    "matches": ["http://*/*", "https://*/*"]
+  }]
+}
